@@ -1,0 +1,248 @@
+.product-wrapper {
+	display: flex;
+	padding: 12px 89px 2px 89px;
+	.image-section {
+		// width: 50%;
+		display: flex;
+		align-items: center;
+		margin-right: 20px;
+		.image-section-small {
+			padding: 2px;
+			width: 120px;
+			cursor: pointer;
+			.small-images {
+				width: 104px;
+				height: 167px;
+				img {
+					display: block;
+					max-width: 100%;
+					height: auto;
+				}
+			}
+		}
+		.image-section-main {
+			.large-image {
+				width: 526px;
+				// height: 594px;
+				img {
+					display: block;
+					max-width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+	.desc-section {
+		width: 50%;
+		.product-title {
+			cursor: pointer;
+			font-weight: 600;
+			margin-bottom: 5px;
+		}
+		.product-subtitle {
+			color: #95969e;
+			letter-spacing: 0.3px;
+			width: 376px;
+		}
+		.amount-section {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-top: 17px;
+			margin-bottom: 10px;
+			.amount-section-1 {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.rupee-text {
+					font-size: 26px !important;
+				}
+				.rental-text {
+					font-size: 14px;
+				}
+			}
+			.amount-section-2 {
+				font-size: 14px;
+				color: #95969e;
+			}
+		}
+		.offers-section {
+			margin-top: 10px;
+			.offers-text {
+				letter-spacing: 0.2px;
+				color: #00a68a;
+			}
+			.offers-text-1 {
+				margin-top: 8px;
+				font-size: 13px;
+				letter-spacing: 0.3px;
+				color: #2a3651;
+				display: flex;
+			}
+			.offers-text-2 {
+				margin-top: 8px;
+				font-size: 13px;
+				letter-spacing: 0.3px;
+				color: #2a3651;
+				display: flex;
+			}
+			.refund-text {
+				letter-spacing: 0.3px;
+				color: #2a3651;
+				font-size: 14px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+		}
+		.delivery-section {
+			margin-top: 10px;
+			.delivery-section-images {
+				margin-top: 5px;
+				display: flex;
+				.size-img {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 64px;
+					height: 64px;
+					border-radius: 32px;
+					border: solid 1px #c4c6cc;
+					background-color: #ffffff;
+					margin-right: 32px;
+				}
+			}
+			.select-size-dropdown {
+				margin-top: 11px;
+				display: flex;
+				flex-direction: column;
+				width: 300px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.product-wrapper {
+		display: flex;
+		flex-direction: column;
+		padding: 12px 0px 2px 13px;
+		.image-section {
+			// width: 50%;
+			display: flex;
+			align-items: center;
+			margin-right: 20px;
+			.image-section-small {
+				padding: 2px;
+				width: 120px;
+				cursor: pointer;
+				.small-images {
+					width: 46px;
+					height: 77px;
+					img {
+						display: block;
+						max-width: 100%;
+						height: auto;
+					}
+				}
+			}
+			.image-section-main {
+				.large-image {
+					width: 228px;
+					// height: 594px;
+					img {
+						display: block;
+						max-width: 100%;
+						height: auto;
+					}
+				}
+			}
+		}
+		.desc-section {
+			width: 50%;
+			.product-title {
+				cursor: pointer;
+				font-weight: 600;
+				margin-bottom: 5px;
+			}
+			.product-subtitle {
+				color: #95969e;
+				letter-spacing: 0.3px;
+				width: 376px;
+			}
+			.amount-section {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding-top: 17px;
+				margin-bottom: 10px;
+				.amount-section-1 {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					.rupee-text {
+						font-size: 26px !important;
+					}
+					.rental-text {
+						font-size: 14px;
+					}
+				}
+				.amount-section-2 {
+					font-size: 14px;
+					color: #95969e;
+				}
+			}
+			.offers-section {
+				margin-top: 10px;
+				.offers-text {
+					letter-spacing: 0.2px;
+					color: #00a68a;
+				}
+				.offers-text-1 {
+					margin-top: 8px;
+					font-size: 13px;
+					letter-spacing: 0.3px;
+					color: #2a3651;
+					display: flex;
+				}
+				.offers-text-2 {
+					margin-top: 8px;
+					font-size: 13px;
+					letter-spacing: 0.3px;
+					color: #2a3651;
+					display: flex;
+				}
+				.refund-text {
+					letter-spacing: 0.3px;
+					color: #2a3651;
+					font-size: 14px;
+					margin-top: 10px;
+					margin-bottom: 10px;
+				}
+			}
+			.delivery-section {
+				margin-top: 10px;
+				.delivery-section-images {
+					margin-top: 5px;
+					display: flex;
+					.size-img {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 64px;
+						height: 64px;
+						border-radius: 32px;
+						border: solid 1px #c4c6cc;
+						background-color: #ffffff;
+						margin-right: 32px;
+					}
+				}
+				.select-size-dropdown {
+					margin-top: 11px;
+					display: flex;
+					flex-direction: column;
+					width: 300px;
+				}
+			}
+		}
+	}
+}

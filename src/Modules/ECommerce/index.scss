@@ -1,0 +1,25 @@
+.ecommerce-wrapper {
+	// padding: 2%;
+	.product-img {
+		display: flex;
+		flex-wrap: wrap;
+		.ecommerce-products {
+			flex-direction: column;
+			display: flex;
+			align-items: center;
+			margin-left: 60px;
+			margin-bottom: 33px;
+			cursor: pointer;
+			img {
+				width: 250px;
+				height: 333px;
+			}
+		}
+		.ecommerce-products:hover {
+			-ms-transform: scale(1.05); /* IE 9 */
+			-webkit-transform: scale(1.05); /* Safari 3-8 */
+			transform: scale(1.05);
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+	}
+}
