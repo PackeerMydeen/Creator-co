@@ -4,13 +4,6 @@ import { withRouter } from 'react-router';
 import Divider from '@material-ui/core/Divider';
 import MobileStepper from '@material-ui/core/MobileStepper';
 import Button from '@material-ui/core/Button';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
-import OutlinedInput from '@material-ui/core/OutlinedInput';
-import InputLabel from '@material-ui/core/InputLabel';
-
-// import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
-// import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
 import './index.scss';
 import RupeeIcon from '../../../images/rupee-icon.svg';
@@ -108,7 +101,7 @@ class Product extends Component {
 							</div>
 						</div>
 
-						{/* <div className='desc-section'>
+						<div className='desc-section'>
 							<div className='product-title'>{productDetails[0].title}</div>
 							<div className='product-subtitle'>{productDetails[0].category_subtitle}</div>
 							<div className='amount-section'>
@@ -142,31 +135,8 @@ class Product extends Component {
 										/>
 									</div>
 								</div>
-								<div className='select-size-dropdown'>
-									<div>SELECT SHIRT SIZE</div>
-									<FormControl variant='outlined'>
-										<Select
-											style={{ padding: '5px' }}
-											native
-											// value={10}
-											// onChange={this.handleChange('age')}
-											input={
-												<OutlinedInput
-													name='age'
-													// labelWidth={this.state.labelWidth}
-													id='outlined-age-native-simple'
-												/>
-											}
-										>
-											<option value='' />
-											<option value={10}>10 Inches</option>
-											<option value={20}>20 inches</option>
-											<option value={30}>30 Inches</option>
-										</Select>
-									</FormControl>
-								</div>
 							</div>
-						</div> */}
+						</div>
 					</Fragment>
 				) : (
 					<div>Loading..</div>
